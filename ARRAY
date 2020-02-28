@@ -1,0 +1,49 @@
+you are given with array of numbers.you have to find whether array is beautiful or not. A beautiful array is an array whose sum of all numbers is divisible by 2, 3 and 5?
+
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+
+
+inp.on("close", () => {
+    var a=[]
+	var n=parseInt(userInput[0])
+    a=(userInput[1].split(' '))
+    
+    for (var k=0; k<a.length; k++)
+    {
+    a[k] = parseInt(a[k])
+    }
+ 
+    var b=[2,3,5]
+    var total=0
+    var count=0
+    for(var j=0;j<a.length;j++)
+    { 
+      total=total+a[j]
+    }
+    for(var i=0;i<b.length;i++)
+    {
+      if(total % b[i] == 0)
+      {
+       count=count+1 
+      }
+      
+    }
+  if(count==3)
+  {
+  console.log('1')
+  }
+  else{
+  console.log('0')}
+    
+})
+
