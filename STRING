@@ -9,3 +9,15 @@ if(n1 == n):
   print(1)
 else:
   print(0)
+
+
+
+
+Given a string 'S' print the sum of weight of the String. A weight of character is defined as the ASCII value of corresponding character?
+s=input()
+sum=0
+n=len(s)
+for i in range(0,n):
+     sum=sum+ord(s[i])
+
+print(sum)
