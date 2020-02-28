@@ -1,0 +1,11 @@
+Print 1 if String is palindrome or 0 if not ?
+
+n=input()
+n1=""
+for i in n:
+     n1=i+n1
+
+if(n1 == n):
+  print(1)
+else:
+  print(0)
