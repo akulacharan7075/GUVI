@@ -103,3 +103,23 @@ inp.on("close", () => {
     }
   
 });
+
+
+
+
+
+Given a number N, print the product of the digits.
+n=input()
+m=len(n)
+l=[]
+tot=1
+for i in range(0,m):
+     l.append(int(n[i]))
+
+    
+for j in l:
+     tot=tot*j
+    
+print(tot)
+
+
