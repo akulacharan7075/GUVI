@@ -13,6 +13,7 @@ else:
 
 
 
+========================================================
 Given a string 'S' print the sum of weight of the String. A weight of character is defined as the ASCII value of corresponding character?
 s=input()
 sum=0
@@ -23,6 +24,7 @@ for i in range(0,n):
 print(sum)
 
 
+========================================================
 
 All the three characters must be distinct.Print true if string is beautiful and false when it is not beautiful  ?
 const readline = require('readline');
@@ -71,6 +73,7 @@ inp.on("close", () => {
 
 
 
+========================================================
 
 Given a string S, print it after changing the middle element to * (if the length of the string is even, change the 2 middle elements to *).
 const readline = require('readline');
@@ -106,7 +109,7 @@ inp.on("close", () => {
 
 
 
-
+========================================================
 
 Given a number N, print the product of the digits.
 n=input()
@@ -122,4 +125,28 @@ for j in l:
     
 print(tot)
 
+=================================================================
 
+Factors of a number
+
+n=int(input())
+l=[]
+if(n<=1000):
+  for i in range(1,n+1):
+       if(n%i==0):
+          l.append(i)
+
+          
+print(*l)         
+
+
+========================================================
+Area of a rectangular farm
+
+l,b=input().split()
+l=float(l)
+b=float(b)
+area=l*b
+print("{:.5f}".format(area))
+
+=================================================================
