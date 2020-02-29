@@ -68,3 +68,38 @@ inp.on("close", () => {
   }
     
 });
+
+
+
+
+Given a string S, print it after changing the middle element to * (if the length of the string is even, change the 2 middle elements to *).
+const readline = require('readline');
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+
+inp.on("close", () => {
+	var a=userInput[0]
+    var n=a.length
+    var mid=n/2
+    mid = mid.toFixed(0)
+    if(n%2 != 0)
+    {
+      a=a.replace(a[mid-1],"*")
+      console.log(a)
+     }
+    else
+    {
+     a=a.replace(a[mid-1],'*')
+     a=a.replace(a[mid],'*')
+     console.log(a)
+    }
+  
+});
