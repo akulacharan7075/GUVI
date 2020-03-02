@@ -44,6 +44,31 @@ inp.on("close", () => {
   }
   else{
   console.log('0')}
-    
+   
 })
+
+
+========================================================================================
+You are given given task is to print whether array is ‘majestic’ or not.A ‘majsetic’ array is an array whose sum of first three number is equal to last three number.
+
+import math
+n=int(input())
+l=list(map(int,input().split()))
+leng=len(l)
+mid=leng/2
+mid=math.floor(mid)
+rs=0
+ls=0
+for i in range(0,mid):
+  ls=ls+l[i]
+
+for j in range(mid+1,n):
+  rs=rs+l[j]
+
+  
+if(ls==rs):
+  print(1)
+
+else:
+  print(0)
 
